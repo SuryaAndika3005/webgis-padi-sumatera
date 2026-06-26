@@ -155,7 +155,7 @@ Aplikasi dapat di-*deploy* secara gratis melalui **Streamlit Community Cloud**:
 2. Login ke [share.streamlit.io](https://share.streamlit.io)
 3. Pilih repositori → atur *main file* ke `app.py` → klik **Deploy**
 
-URL aplikasi: `https://<username>-webgis-padi-sumatera.streamlit.app`
+URL aplikasi: `https://webgis-padi-sumatera.streamlit.app`
 
 ---
 
