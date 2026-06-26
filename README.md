@@ -1,4 +1,4 @@
-# 🌾 Web GIS Prediksi Produksi Padi Sumatera
+# Web GIS Prediksi Produksi Padi Sumatera
 
 **Sistem Web GIS Interaktif untuk Visualisasi dan Prediksi Produksi Padi di Sumatera Berbasis Random Forest Regressor**
 
@@ -6,7 +6,7 @@ Aplikasi Web GIS spasio-temporal yang mengintegrasikan visualisasi data historis
 
 ---
 
-## 📖 Deskripsi Singkat
+## Deskripsi Singkat
 
 Produksi padi sangat bergantung pada kondisi iklim seperti curah hujan, kelembapan, dan suhu rata-rata. Aplikasi ini membantu memahami pola produksi padi secara spasial dan temporal, sekaligus mensimulasikan dampak skenario perubahan iklim terhadap produksi di masa depan melalui antarmuka peta interaktif.
 
@@ -17,28 +17,18 @@ Sistem menyediakan **dua mode eksplorasi**:
 
 ---
 
-## ✨ Fitur Utama
+## Fitur Utama
 
-- 🗺️ **Peta Choropleth Interaktif** (Folium) dengan gradasi warna berdasarkan tingkat produksi
-- 🖱️ **Tooltip & Popup** — *hover* menampilkan nama provinsi & produksi; *klik* menampilkan rincian suhu, curah hujan, dan kelembapan
-- 📈 **Line Chart Interaktif** (Plotly) — tren historis (garis solid) tersambung dengan proyeksi (garis putus-putus)
-- 🤖 **Model Random Forest Regressor** untuk prediksi produksi berbasis multivariat iklim
-- 🎛️ **Slider Skenario Iklim** — modifikasi suhu, curah hujan, kelembapan, dan luas panen secara *real-time*
-- 🧩 **Arsitektur Modular** — empat komponen terpisah yang mudah dipelihara
-
----
-
-## 🖼️ Tangkapan Layar
-
-| Mode Historis | Mode Proyeksi Cerdas |
-|---|---|
-| ![Mode Historis](docs/screenshot_historis.png) | ![Mode Proyeksi](docs/screenshot_proyeksi.png) |
-
-> Letakkan tangkapan layar aplikasi pada folder `docs/` dan sesuaikan nama file di atas.
+-  **Peta Choropleth Interaktif** (Folium) dengan gradasi warna berdasarkan tingkat produksi
+-  **Tooltip & Popup** — *hover* menampilkan nama provinsi & produksi; *klik* menampilkan rincian suhu, curah hujan, dan kelembapan
+-  **Line Chart Interaktif** (Plotly) — tren historis (garis solid) tersambung dengan proyeksi (garis putus-putus)
+-  **Model Random Forest Regressor** untuk prediksi produksi berbasis multivariat iklim
+-  **Slider Skenario Iklim** — modifikasi suhu, curah hujan, kelembapan, dan luas panen secara *real-time*
+-  **Arsitektur Modular** — empat komponen terpisah yang mudah dipelihara
 
 ---
 
-## 🏗️ Arsitektur Sistem
+## Arsitektur Sistem
 
 Aplikasi dirancang secara modular dalam empat komponen utama:
 
@@ -64,7 +54,7 @@ Aplikasi dirancang secara modular dalam empat komponen utama:
 
 ---
 
-## 📊 Dataset
+## Dataset
 
 | Dataset | File | Keterangan |
 |---|---|---|
@@ -75,7 +65,7 @@ Aplikasi dirancang secara modular dalam empat komponen utama:
 
 ---
 
-## 🤖 Model Machine Learning
+## Model Machine Learning
 
 - **Algoritma:** Random Forest Regressor (`scikit-learn`)
 - **Target:** Produksi padi (ton)
@@ -91,18 +81,17 @@ Aplikasi dirancang secara modular dalam empat komponen utama:
 | RMSE | 187.432 ton |
 | MAE | 134.215 ton |
 
-> ⚠️ Sesuaikan nilai metrik di atas dengan hasil aktual dari aplikasimu.
 
 Dokumentasi lengkap pipeline ML tersedia di [`notebook/pipeline_ml.ipynb`](notebook/pipeline_ml.ipynb).
 
 ---
 
-## ⚙️ Instalasi & Menjalankan
+## Instalasi & Menjalankan
 
 ### 1. Klon repositori
 
 ```bash
-git clone https://github.com/<username>/webgis-padi-sumatera.git
+git clone https://github.com/SuryaAndika3005/webgis-padi-sumatera.git
 cd webgis-padi-sumatera
 ```
 
@@ -146,20 +135,19 @@ webgis-padi-sumatera/
 ├── README.md                               # Dokumentasi ini
 ├── Data_Tanaman_Padi_Sumatera_version_1.csv
 ├── 38 Provinsi Indonesia - Provinsi.json
-├── docs/                                    # Tangkapan layar untuk dokumentasi
 └── notebook/
     └── pipeline_ml.ipynb                    # Dokumentasi pipeline ML
 ```
 
 ---
 
-## 📦 Dependensi Utama
+## Dependensi Utama
 
 `streamlit` · `streamlit-folium` · `folium` · `geopandas` · `pandas` · `numpy` · `scikit-learn` · `plotly` · `matplotlib`
 
 ---
 
-## 🚀 Deployment
+##  Deployment
 
 Aplikasi dapat di-*deploy* secara gratis melalui **Streamlit Community Cloud**:
 
@@ -171,13 +159,8 @@ URL aplikasi: `https://<username>-webgis-padi-sumatera.streamlit.app`
 
 ---
 
-## 👤 Penulis
+## Penulis
 
 **Surya Andika**
 Program Studi Informatika, Fakultas Teknologi Informasi, Universitas Andalas
 
----
-
-## 📄 Lisensi
-
-Proyek ini dibuat untuk keperluan akademik (Tugas Akhir Web GIS). Silakan sesuaikan lisensi sesuai kebutuhan, misalnya [MIT License](https://opensource.org/licenses/MIT).
